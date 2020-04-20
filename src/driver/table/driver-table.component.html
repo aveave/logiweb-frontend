@@ -1,0 +1,25 @@
+<form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">SurName</th>
+                <th scope="col">Worked time</th>
+                <th scope="col">Driver Status</th>
+                <th scope="col">Current City</th>
+                <th scope="col">Current Vagon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let driver of driversList | async">
+                <th scope="row"> {{driver.id}} </th>
+                <td><ngb-highlight [result]="driver.name"></ngb-highlight></td>
+                <td><ngb-highlight [result]="driver.surname"></ngb-highlight></td>
+                <td><ngb-highlight [result]="driver.workedTime"></ngb-highlight></td>
+                <td><ngb-highlight [result]="driver.driverStatus"></ngb-highlight></td>    
+                <td><ngb-highlight [result]="driver.currentCity"></ngb-highlight></td>    
+                <td><ngb-highlight [result]="driver.currentVagon"></ngb-highlight></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

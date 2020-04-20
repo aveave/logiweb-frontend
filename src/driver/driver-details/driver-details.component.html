@@ -1,0 +1,17 @@
+<div *ngIf="driver">
+    
+    <div>
+        <label for="name">Name</label>
+        {{driver.name}}
+    </div>
+    <div>
+        <label for="surname">SurName</label>
+        {{driver.surname}}
+    </div>
+</div>
+
+
+
+<button (click)="deleteDriver()">Delete</button>
+
+<button (click)="updateDriver()">Update</button>
