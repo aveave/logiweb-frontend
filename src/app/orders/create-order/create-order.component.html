@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form>
+
+            <div class="row" appHighlightRow>
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order status</label>
+                    <input type="text" id="status" #statusInput>
+                </div>
+            </div>
+
+            <div class="row" appHighlightRow>
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order loadDate</label>
+                    <input type="text" id="status" #loadDateInput>
+                </div>
+            </div>
+
+            <div class="row" appHighlightRow>
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order planedDeliveryDate</label>
+                    <input type="text" id="status" #planedDeliveryDateInput>
+                </div>
+            </div>
+
+            <div class="row" appHighlightRow>
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order actualDeliveryDate</label>
+                    <input type="text" id="status" #actualDeliveryDateInput>
+                </div>
+            </div>
+
+
+            <button class="btn btn-primary" (click)="onCreateOrder()">Create order</button>
+        </form>
+    </div>
+</div>

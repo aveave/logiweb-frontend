@@ -1,0 +1,9 @@
+<div [appHighlightRow]="'solid'" [highlightBorder]="'outset'" class="container">
+    <div class="row border" (click)="onOrderSelected()">
+        <div class="col">Order status {{currentOrder.status}}</div>
+        <div class="col">Load Date {{currentOrder.loadDate}}</div>
+        <div class="col">Planed Delivery Date {{currentOrder.planedDeliveryDate}}</div>
+        <div class="col">Actual Delivery Date {{currentOrder.actualDeliveryDate}}</div>
+        <div class="col">Cargos {{currentOrder.cargos}}</div>
+    </div>
+</div>

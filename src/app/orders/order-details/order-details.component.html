@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form>
+
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order status</label>
+                    <input type="text" id="status" [value]="order.status" #statusInput>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order loadDate</label>
+                    <input type="text" id="status" [value]="order.loadDate" #loadDateInput>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order planedDeliveryDate</label>
+                    <input type="text" id="status" [value]="order.planedDeliveryDate" #planedDeliveryDateInput>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="status">Order actualDeliveryDate</label>
+                    <input type="text" id="status" [value]="order.actualDeliveryDate" #actualDeliveryDateInput>
+                </div>
+            </div>
+
+
+            <button class="btn btn-primary" (click)="onUpdateOrder()">Save changes</button>
+        </form>
+    </div>
+</div>

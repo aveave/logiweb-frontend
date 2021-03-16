@@ -1,0 +1,24 @@
+<!-- <div class="col-md-2">
+    <button class="btn btn-success" (click)="isCreateNewOrder = true">New Order</button>
+</div> -->
+<div class="row">
+    <div class="col">
+        <app-order-item *ngFor="let order of orders" [currentOrder]="order"></app-order-item>
+    </div>
+</div>
+<!-- <div class="row">
+    <div class="col">
+        <app-order-details *ngIf="selectedOrderOnList" [order]="selectedOrderOnList"></app-order-details>
+    </div>
+</div>
+<div class="row">
+    <div>
+        <app-create-order *ngIf="isCreateNewOrder" (orderCreated)="onCreateOrder($event)"></app-create-order>
+    </div>
+    <div [ngSwitch]="temp">
+        <p *ngSwitchCase="5">5</p>
+        <p *ngSwitchCase="10">11</p>
+        <p *ngSwitchCase="15">15</p>
+        <p *ngSwitchDefault>Default</p>
+    </div>
+</div> -->

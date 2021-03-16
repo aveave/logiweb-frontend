@@ -1,0 +1,52 @@
+<div id="header">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto" routerLinkActive="active">
+            <li class="nav-item">
+                <a href="/home" class="nav-link" routerLink="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/drivers" class="nav-link" routerLink="drivers">Driver list</a>
+            </li>
+            <li class="nav-item">
+                <a href="/driver" class="nav-link" routerLink="driver">Add new driver</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+            <li class="nav-item">
+                <a href="/register" class="nav-link" routerLink="register">
+                    Sign up
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/login" class="nav-link" routerLink="login">
+                    Login
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+            <li class="nav-item">
+                <a href="/profile" class="nav-link" routerLink="profile">
+                    Profile
+                </a>
+            </li>
+            <li class="navItem">
+                <a class="nav-link" (click)="logout()">LogOut</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+
+<div class="dropdown show">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown link
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>

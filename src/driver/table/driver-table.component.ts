@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -9,13 +9,12 @@ import { DriverService } from 'src/service/driver.service';
 @Component({
     selector: 'app-driver-table',
     templateUrl: './driver-table.component.html',
-    styleUrls: ['./driver-table.component.css']
+    styleUrls: ['./driver-table.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 export class NgbdDriverTableComponent implements OnInit{
 
     driversList: Observable<Driver[]>;
-
-    // @Input() driversList: any;
 
     constructor(private router: Router, private driverService: DriverService){}
 
